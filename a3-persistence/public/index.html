@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>CS4241 Assignment 2</title>
+    <meta charset="utf-8">
+
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel = "stylesheet" type = "text/css" href = "css/style.css" />
+  </head>
+  <body>
+    <form action="/login" method="post">
+    <div>
+        <label>Username:</label>
+        <input id="username" type="text" name="username"/>
+    </div>
+    <div>
+        <input onclick="setToken(username.val)" type="submit" value="Log In"/>
+    </div>
+    </form>
+    <button onclick="location.href='newUser.html'">New User</button>
+  </body>
+  <script>
+  </script>
+<script src="https://www.gstatic.com/firebasejs/6.6.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/3.1.0/firebase-database.js"></script>
+<script type="text/javascript" src="js/scripts.js"></script>
+</html>
